@@ -3,67 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cavour Luxury Rooms - Nicotera</title>
+    <title>Vivi la magia della Costa degli Dei - Cavour Luxury Rooms</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; background-color: #f5f3ef; color: #333; }
-        .hero { text-align: center; padding: 50px 20px; }
-        .hero img { max-width: 150px; }
-        h1 { font-size: 2.5em; margin: 20px 0 10px; }
-        p { font-size: 1.2em; margin: 10px 0; }
-        .btn { display: inline-block; padding: 10px 20px; background: #000; color: #fff; text-decoration: none; margin-top: 20px; }
+        header { background: url('photo1.jpeg') center/cover no-repeat; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; }
+        header h1 { font-size: 3em; margin: 10px; }
+        header p { font-size: 1.5em; margin: 10px; }
+        .btn { display: inline-block; padding: 12px 24px; background: #25D366; color: #fff; text-decoration: none; font-size: 1.2em; margin-top: 20px; border-radius: 30px; }
         .section { padding: 40px 20px; text-align: center; }
-        .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-        .gallery img { width: 300px; height: 200px; object-fit: cover; border-radius: 8px; }
-        .services { margin-top: 30px; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px; padding: 20px; }
+        .gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; }
         .contact { background: #e0dad2; padding: 40px 20px; text-align: center; }
         footer { font-size: 0.8em; color: #777; padding: 20px; text-align: center; }
-        input, textarea { width: 80%; padding: 10px; margin: 10px 0; }
-        form button { padding: 10px 20px; background: #000; color: #fff; border: none; }
+        #whatsapp { position: fixed; bottom: 20px; right: 20px; background: #25D366; padding: 15px; border-radius: 50%; }
+        #whatsapp img { width: 40px; height: 40px; }
     </style>
 </head>
 <body>
 
-<div class="hero">
-    <img src="logo.png" alt="Cavour Luxury Rooms">
-    <h1>Soggiorna nel cuore di Nicotera</h1>
-    <p>Camere eleganti a due passi dal mare con colazione inclusa</p>
-    <a href="#contatti" class="btn">Prenota ora</a>
-</div>
+<header>
+    <h1>Vivi la magia della Costa degli Dei</h1>
+    <p>Relax, storia e mare a Nicotera</p>
+    <a href="https://wa.me/393292597014" class="btn">Contattaci su WhatsApp</a>
+</header>
 
 <div class="section">
-    <h2>La posizione ideale</h2>
-    <p>Scopri Cavour Luxury Rooms, nel cuore del centro storico di Nicotera (VV), a pochi minuti dalle meravigliose spiagge del Tirreno.
-    Nicotera è famosa per essere la patria della Dieta Mediterranea, stile di vita riconosciuto Patrimonio UNESCO.
-    In pochi chilometri puoi raggiungere Tropea, Scilla e l'Aspromonte!</p>
-
-    <div class="gallery">
-        <img src="photo1.jpeg" alt="Dettaglio">
-        <img src="photo2.jpeg" alt="Cucina">
-        <img src="photo3.jpeg" alt="Bagno">
-        <img src="photo4.jpeg" alt="Doccia">
-        <img src="photo5.jpeg" alt="Stanza">
-    </div>
-
-    <div class="services">
-        <p>Wi-Fi gratuito | Aria condizionata | Bagno privato | TV | Parcheggio disponibile | Piscina idromassaggio privata</p>
-    </div>
+    <h2>Un soggiorno tra mare e cultura</h2>
+    <p>Nel cuore del centro storico di Nicotera, a pochi minuti dalle spiagge turchesi di Tropea e Scilla, tra le tradizioni della Dieta Mediterranea e i paesaggi dell'Aspromonte.</p>
 </div>
 
-<div id="contatti" class="contact">
-    <h2>Richiedi informazioni</h2>
-    <p>Contattaci per disponibilità o maggiori dettagli.</p>
-    <form>
-        <input type="text" placeholder="Nome" required><br>
-        <input type="email" placeholder="Email" required><br>
-        <textarea placeholder="Messaggio" rows="4" required></textarea><br>
-        <button type="submit">Invia</button>
-    </form>
-    <p>Oppure <a href="https://wa.me/393292597014" style="color: #000; text-decoration: underline;">scrivici su WhatsApp</a></p>
+<div class="gallery">
+    <img src="photo1.jpeg" alt="Mare di Tropea">
+    <img src="photo2.jpeg" alt="Centro Storico di Nicotera">
+    <img src="photo3.jpeg" alt="Costa degli Dei">
+    <img src="photo4.jpeg" alt="Camere Cavour">
+    <img src="photo5.jpeg" alt="Dettagli di stile">
+</div>
+
+<div class="contact">
+    <h2>Prenota ora il tuo soggiorno</h2>
+    <p>Wi-Fi gratuito, aria condizionata, bagno privato, TV, parcheggio disponibile e piscina idromassaggio privata.</p>
 </div>
 
 <footer>
     Gestito da privato. Non costituisce attività d'impresa ai sensi dell'art. 2082 c.c.
 </footer>
+
+<a id="whatsapp" href="https://wa.me/393292597014">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Contattaci su WhatsApp">
+</a>
 
 </body>
 </html>
